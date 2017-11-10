@@ -6,7 +6,7 @@ import java.util.ArrayList;
  * Created by user on 10/11/2017.
  */
 
-public class Enclosure<T> {
+public class Enclosure<T extends Animal> {
 
     private ArrayList<T> animals;
 
@@ -24,5 +24,13 @@ public class Enclosure<T> {
 
     public void removeAnimal(T animal) {
         animals.remove(animal);
+    }
+
+    public int getNumberOfAnimals() {
+        return animals.size();
+    }
+
+    public boolean containsAnimal(Animal animal) {
+        return animals.contains(animal);
     }
 }
