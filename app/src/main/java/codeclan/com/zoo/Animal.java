@@ -7,4 +7,8 @@ package codeclan.com.zoo;
 public abstract class Animal<A> {
 
     private int cashValue;
+
+    public Animal(int cashValue) {
+        this.cashValue = cashValue;
+    }
 }
